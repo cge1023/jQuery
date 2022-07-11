@@ -1,0 +1,33 @@
+<!-- .prepend() 메소드 -->
+<!-- .before() 메소드 -->
+<!-- .append() 메소드 선택된 요소의 마지막에 새로운 요소나 컨텐츠를 추가-->
+<!-- .after() 메소드 선택한 요소의 바로 뒤쪽에 새로운 요소나 컨텐츠를 추가 -->
+<html>
+    <head>
+        <style>
+            span {
+                background-color: green;
+            }
+
+            .b {
+                background-color: red;
+            }
+
+            p{
+                background-color: yellow;
+            }
+        </style>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            function a() {
+                $('.b').text('<p>Hello</p>');
+            }
+        </script>
+    </head>
+
+    <body>
+        <span class="b">안녕?</span>
+        <span onClick="a();">클릭</span>
+    </body>
+</html>
